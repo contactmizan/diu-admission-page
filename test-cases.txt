@@ -1,8 +1,22 @@
 # Test Cases
-1. ✅ Register with valid email, address, image → Success.
-2. ❌ Register with invalid email → Error alert.
-3. ❌ Register with short address → Error alert.
-4. ❌ No image selected → Error alert.
-5. ✅ Login with valid email/password → Simulated success.
-6. ❌ Login with invalid email → Error alert.
-7. ❌ Login with short password → Error alert.
+
+## Registration Form
+1. ✅ Register with valid fullname, department, phone, email, address, and image → Success, data stored in XAMPP MySQL.
+2. ❌ Register with invalid email format → Alert: "Invalid email address".
+3. ❌ Register with short address (<5 chars) → Alert: "Address too short".
+4. ❌ Register with invalid phone (not 10-15 digits) → Alert: "Enter a valid phone number".
+5. ❌ No image selected → Alert: "Please upload an image".
+6. ❌ Fullname less than 3 characters → Alert: "Please enter a valid full name".
+7. ❌ Department less than 2 characters → Alert: "Please enter a valid department".
+
+## Login Form
+8. ✅ Login with correct email and password → Redirect to `index.html` (Login Success).
+9. ❌ Login with non-existing email → Alert: "No account found".
+10. ❌ Login with incorrect password → Alert: "Invalid Password".
+11. ❌ Login with password less than 4 characters → Alert: "Password must be at least 4 characters".
+
+## UI & Layout
+12. ✅ Home page displays carousel with uniform height images.
+13. ✅ News cards display images with same height and object-fit.
+14. ✅ Responsive layout works on desktop, tablet, and mobile screens.
+15. ✅ Navigation bar with drop-down menu works and collapses on smaller screens.
